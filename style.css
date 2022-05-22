@@ -20,6 +20,9 @@ header h1 {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {
@@ -32,4 +35,51 @@ footer h4 {
     font-size: 0.8rem;
     font-weight: 400;
     margin: 12px 0;
+}
+
+#newBook {
+    margin: 24px 16px;
+    padding: 8px 36px;
+    border: none;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: white;
+    background-color: rgba(53, 121, 246, 0.9);
+}
+
+#newBook:active {
+    box-shadow: none;
+    background-color:  rgba(53, 121, 246, 1.0);
+}
+
+#newBook:hover {
+    cursor: pointer;
+    background-color: rgba(53, 121, 246, 1.0);
+}
+
+.overlay {
+    background-color: rgba(200, 200, 200, 0.4);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#newBookForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5%;
+    align-self: stretch;
 }
